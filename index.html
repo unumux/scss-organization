@@ -2,11 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SCSS Organization</title>
     <link rel="stylesheet" href="styles/site.min.css">
 </head>
 <body>
-    <h1>Site</h1>
+    <h1>SCSS Organization</h1>
+    <p>Below is a contrived component; its purpose is to group and position other components. These other components can be inserted as children under the <code>card-list__card</code> elements.</p>
+    <section class="card-list">
+        <h1 class="card-list__name">Professions</h1>
+        <p class="card-list__description">Welcome to Joe Bibbity's famous things and stuff shop! Be ye a blacksmith or a taxi driver, we've got the right tools for any job.</p>
+        <ul class="card-list__cards">
+            <li class="card-list__card">
+                <div class="action-box">
+                    <h1 class="action-box__heading">Mage</h1>
+                    <p class="action-box__description">So you're a mage, eh? Then I have just the right tool for you.</p>
+                    <div class="action-box__actions">
+                        <a class="button" href="#">Launch Magitron</a>
+                    </div>
+                </div>
+            </li>
+            <li class="card-list__card">
+                <div class="action-box">
+                    <h1 class="action-box__heading">Warrior</h1>
+                    <p class="action-box__description">Welcome, warrior! Let's take a look at your inventory. What do you say?</p>
+                    <div class="action-box__actions">
+                        <a class="button--neutral" href="#">Maybe Another Time</a>
+                        <a class="button" href="#">Aye!</a>
+                    </div>
+                </div>
+            </li>
+            <li class="card-list__card">
+                <div class="action-box">
+                    <h1 class="action-box__heading">Chef</h1>
+                    <p class="action-box__description">What's that? A chef? I'm not sure I have much to offer a chef, but feel free to look around.</p>
+                    <div class="action-box__actions">
+                        <a class="button" href="#">Browse</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="card-list">
+        <h1 class="card-list__name">Store Patrons</h1>
+        <p class="card-list__description">Here are some of our most dedicated patrons!</p>
+        <ul class="card-list__cards">
+            <li class="card-list__card">
+                <div class="patron">
+                    <p class="patron-name">Jank Stonebridge</p>
+                    <img class="patron-image" src="http://www.placecage.com/300/300" alt="Jank Stonebridge">
+                </div>
+            </li>
+            <li class="card-list__card">
+                <div class="patron">
+                    <p class="patron-name">Hawthorne Dunkletrinket</p>
+                    <img class="patron-image" src="http://www.placecage.com/300/300" alt="Hawthorne Dunkletrinket">
+                </div>
+            </li>
+            <li class="card-list__card">
+                <div class="patron">
+                    <p class="patron-name">Kevin</p>
+                    <img class="patron-image" src="http://fillmurray.com/300/300" alt="Kevin">
+                </div>
+            </li>
+        </ul>
+    </section>
+
     <script src="scripts/site.min.js"></script>
 </body>
 </html>
