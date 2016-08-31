@@ -1,5 +1,14 @@
+$primary: #3D4C53;
+$secondary: #70B7BA;
+$action: #A9CF54;
+$action-text: #F7E967;
+$accent: #F1433F;
+$light: #EEEEEE;
+$dark: #333333;
+
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
@@ -9,6 +18,83 @@ html {
 }
 
 body {
-    background: #eee;
-    color: #333;
+    background: $primary;
+    color: $light;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+a {
+    color: $action-text;
+}
+
+a:hover {
+    color: darken($action-text, 20%);
+}
+
+a:focus {
+    color: darken($action-text, 20%);
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+a:active {
+    color: darken($action-text, 30%);
+    background-color: inherit;
+}
+
+/* Buttons */
+
+.button {
+    background-color: $action;
+    border-radius: 0.4rem;
+    color: $dark;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: darken($action, 10%);
+    color: $dark;
+}
+
+.button:focus {
+    background-color: lighten($action, 20%);
+    box-shadow: 0 0 0 2px $action;
+    color: $dark;
+    outline: none;
+}
+
+.button:active {
+    background-color: darken($action, 15%);
+    box-shadow: none;
+    color: $dark;
+}
+
+.button--neutral {
+    background-color: $light;
+    border-radius: 0.4rem;
+    color: $dark;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.button--neutral:hover {
+    background-color: darken($light, 10%);
+    color: $dark;
+}
+
+.button--neutral:focus {
+    background-color: lighten($light, 20%);
+    box-shadow: 0 0 0 2px $action;
+    color: $dark;
+    outline: none;
+}
+
+.button--neutral:active {
+    background-color: darken($light, 15%);
+    box-shadow: none;
+    color: $dark;
 }
