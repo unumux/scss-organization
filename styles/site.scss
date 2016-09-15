@@ -172,14 +172,13 @@ a:active {
 }
 
 .action-box__description {
-    text-transform: uppercase; 
-    color: $secondary;
+    text-transform: uppercase;
 }
 
 .action-box__actions {
     background-color: darken($primary, 5%);
     padding: 1rem;
-    margin: 0 -2rem -2rem;
+    margin: 3rem -2rem -2rem -2rem;
 }
 
 
