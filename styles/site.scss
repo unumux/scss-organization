@@ -20,6 +20,7 @@ html {
 body {
     background: $primary;
     color: $light;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
@@ -49,6 +50,7 @@ a:active {
     background-color: $action;
     border-radius: 0.4rem;
     color: $dark;
+    display: inline-block;
     padding: 1rem 2rem;
     transition: background-color 0.3s, box-shadow 0.3s;
     text-decoration: none;
@@ -76,6 +78,7 @@ a:active {
     background-color: $light;
     border-radius: 0.4rem;
     color: $dark;
+    display: inline-block;
     padding: 1rem 2rem;
     transition: background-color 0.3s, box-shadow 0.3s;
     text-decoration: none;
@@ -97,4 +100,37 @@ a:active {
     background-color: darken($light, 15%);
     box-shadow: none;
     color: $dark;
+}
+
+
+/* Card List */
+
+.card-list {
+    background-color: lighten($primary, 10%);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.card-list__name {
+
+}
+
+.card-list__description {
+
+}
+
+.card-list__cards {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.card-list__card {
+    background-color: $primary;
+    flex: 1 1 auto;
+    padding: 2rem;
+}
+
+.card-list__card + .card-list__card {
+    margin-left: 2rem;
 }
