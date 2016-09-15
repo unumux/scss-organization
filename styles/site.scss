@@ -162,16 +162,21 @@ a:active {
 }
 
 .action-box__heading {
-
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: normal;
 }
 
 .action-box__description {
-
+    text-transform: uppercase; 
+    color: $secondary;
 }
 
 .action-box__actions {
-
+    text-align: center;
 }
+
+
 
 
 /* Patron */
