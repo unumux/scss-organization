@@ -182,13 +182,17 @@ a:active {
 /* Patron */
 
 .patron {
-
+    text-align: center;
+    border: 0.8rem solid $dark;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background-color: $light;
 }
 
 .patron__name {
-
+    color: $secondary;
 }
 
 .patron__image {
-    
+    border: 0.5rem solid $primary;
 }
