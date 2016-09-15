@@ -89,8 +89,8 @@ a:active {
     color: $dark;
     display: inline-block;
     padding: 1rem 2rem;
-    transition: background-color 0.3s, box-shadow 0.3s;
     text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .button--neutral:hover {
@@ -121,9 +121,9 @@ a:active {
 }
 
 .card-list__name {
+    border-left: 0.5rem solid $action-text;
     display: inline-block;
     padding: 1rem;
-    border-left: 0.5rem solid $action-text;
 }
 
 .card-list__description {
@@ -169,14 +169,14 @@ a:active {
 }
 
 .action-box__heading {
-    text-transform: uppercase;
+    background-color: $secondary;
     font-size: 4rem;
     font-weight: normal;
-    background-color: $secondary;
+    margin-top: -2rem;
     margin-right: -2rem;
     margin-left: -2rem;
-    margin-top: -2rem;
     padding: 2rem;
+    text-transform: uppercase;
 }
 
 .action-box__description {
@@ -185,8 +185,8 @@ a:active {
 
 .action-box__actions {
     background-color: darken($primary, 5%);
-    padding: 1rem;
     margin: 3rem -2rem -2rem -2rem;
+    padding: 1rem;
 }
 
 
@@ -195,11 +195,11 @@ a:active {
 /* Patron */
 
 .patron {
-    text-align: center;
+    background-color: $light;
     border: 0.8rem solid $dark;
     border-radius: 0.4rem;
     padding: 1rem;
-    background-color: $light;
+    text-align: center;
 }
 
 .patron__name {
