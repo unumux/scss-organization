@@ -106,31 +106,49 @@ a:active {
 /* Card List */
 
 .card-list {
-    background-color: lighten($primary, 10%);
+    background-color: lighten($primary, 5%);
     margin-bottom: 2rem;
     padding: 2rem;
 }
 
 .card-list__name {
-
+    background-color: $secondary;
+    color: $primary;
+    display: inline-block;
+    padding: 1rem;
 }
 
 .card-list__description {
-
+    font-style: italic;
 }
 
 .card-list__cards {
-    display: flex;
     list-style: none;
     padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+    .card-list__cards {
+        display: flex;
+    }
+}
 .card-list__card {
     background-color: $primary;
-    flex: 1 1 auto;
     padding: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+    .card-list__card {
+        flex: 1 1 auto;
+    }
+}
+
 .card-list__card + .card-list__card {
-    margin-left: 2rem;
+    margin: 2rem 0 0 0;
+}
+
+@media screen and (min-width: 768px) {
+    .card-list__card + .card-list__card {
+        margin: 0 0 0 2rem;
+    }
 }
