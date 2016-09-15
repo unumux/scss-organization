@@ -158,7 +158,7 @@ a:active {
 /* Action Box */
 
 .action-box {
-
+    text-align: center;
 }
 
 .action-box__heading {
@@ -173,7 +173,8 @@ a:active {
 }
 
 .action-box__actions {
-    text-align: center;
+    background-color: darken($primary, 5%);
+    padding: 1rem;
 }
 
 
