@@ -113,10 +113,9 @@ a:active {
 }
 
 .card-list__name {
-    background-color: $secondary;
-    color: $primary;
     display: inline-block;
     padding: 1rem;
+    border-left: 0.5rem solid $action-text;
 }
 
 .card-list__description {
