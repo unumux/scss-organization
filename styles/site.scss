@@ -36,21 +36,21 @@ body {
 
 a {
     color: $action-text;
-}
 
-a:hover {
-    color: darken($action-text, 20%);
-}
+    &:hover {
+        color: darken($action-text, 20%);
+    }
 
-a:focus {
-    color: darken($action-text, 20%);
-    background-color: rgba(255, 255, 255, 0.2);
-    outline: none;
-}
+    &:focus {
+        color: darken($action-text, 20%);
+        background-color: rgba(255, 255, 255, 0.2);
+        outline: none;
+    }
 
-a:active {
-    color: darken($action-text, 30%);
-    background-color: inherit;
+    &:active {
+        color: darken($action-text, 30%);
+        background-color: inherit;
+    }
 }
 
 /* Buttons */
@@ -63,53 +63,54 @@ a:active {
     padding: 1rem 2rem;
     transition: background-color 0.3s, box-shadow 0.3s;
     text-decoration: none;
+    
+    &:hover {
+        background-color: darken($action, 10%);
+        color: $dark;
+    }
+
+    &:focus {
+        background-color: lighten($action, 20%);
+        box-shadow: 0 0 0 2px $action;
+        color: $dark;
+        outline: none;
+    }
+
+    &:active {
+        background-color: darken($action, 15%);
+        box-shadow: none;
+        color: $dark;
+    }
+
+    &--neutral {
+        background-color: $light;
+        border-radius: 0.4rem;
+        color: $dark;
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: background-color 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            background-color: darken($light, 10%);
+            color: $dark;
+        }
+
+        &:focus {
+            background-color: lighten($light, 20%);
+            box-shadow: 0 0 0 2px $action;
+            color: $dark;
+            outline: none;
+        }
+
+        &:active {
+            background-color: darken($light, 15%);
+            box-shadow: none;
+            color: $dark;
+        }
+    }
 }
 
-.button:hover {
-    background-color: darken($action, 10%);
-    color: $dark;
-}
-
-.button:focus {
-    background-color: lighten($action, 20%);
-    box-shadow: 0 0 0 2px $action;
-    color: $dark;
-    outline: none;
-}
-
-.button:active {
-    background-color: darken($action, 15%);
-    box-shadow: none;
-    color: $dark;
-}
-
-.button--neutral {
-    background-color: $light;
-    border-radius: 0.4rem;
-    color: $dark;
-    display: inline-block;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.button--neutral:hover {
-    background-color: darken($light, 10%);
-    color: $dark;
-}
-
-.button--neutral:focus {
-    background-color: lighten($light, 20%);
-    box-shadow: 0 0 0 2px $action;
-    color: $dark;
-    outline: none;
-}
-
-.button--neutral:active {
-    background-color: darken($light, 15%);
-    box-shadow: none;
-    color: $dark;
-}
 
 
 /* Card List */
@@ -118,47 +119,43 @@ a:active {
     background-color: lighten($primary, 5%);
     margin-bottom: 2rem;
     padding: 2rem;
-}
 
-.card-list__name {
-    border-left: 0.5rem solid $action-text;
-    display: inline-block;
-    padding: 1rem;
-}
-
-.card-list__description {
-    font-style: italic;
-}
-
-.card-list__cards {
-    list-style: none;
-    padding: 0;
-}
-
-@media screen and (min-width: 768px) {
-    .card-list__cards {
-        display: flex;
+    &__name {
+        border-left: 0.5rem solid $action-text;
+        display: inline-block;
+        padding: 1rem;
     }
-}
-.card-list__card {
-    background-color: $primary;
-    padding: 2rem;
-}
 
-@media screen and (min-width: 768px) {
-    .card-list__card {
-        flex: 1 1 auto;
+    &__description {
+        font-style: italic;
     }
-}
 
-.card-list__card + .card-list__card {
-    margin: 2rem 0 0 0;
-}
+    &__cards {
+        list-style: none;
+        padding: 0;
 
-@media screen and (min-width: 768px) {
-    .card-list__card + .card-list__card {
-        margin: 0 0 0 2rem;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
+
+    &__card {
+        background-color: $primary;
+        padding: 2rem;
+
+        @media screen and (min-width: 768px) {
+            flex: 1 1 auto;
+        }
+
+        & + & {
+            margin: 2rem 0 0 0;
+
+            @media screen and (min-width: 768px) {
+                margin: 0 0 0 2rem;
+            }
+        }
+    }
+
 }
 
 
@@ -166,30 +163,28 @@ a:active {
 
 .action-box {
     text-align: center;
+
+    &__heading {
+        background-color: $secondary;
+        font-size: 4rem;
+        font-weight: normal;
+        margin-top: -2rem;
+        margin-right: -2rem;
+        margin-left: -2rem;
+        padding: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        text-transform: uppercase;
+    }
+
+    &__actions {
+        background-color: darken($primary, 5%);
+        margin: 3rem -2rem -2rem -2rem;
+        padding: 1rem;
+    }
 }
-
-.action-box__heading {
-    background-color: $secondary;
-    font-size: 4rem;
-    font-weight: normal;
-    margin-top: -2rem;
-    margin-right: -2rem;
-    margin-left: -2rem;
-    padding: 2rem;
-    text-transform: uppercase;
-}
-
-.action-box__description {
-    text-transform: uppercase;
-}
-
-.action-box__actions {
-    background-color: darken($primary, 5%);
-    margin: 3rem -2rem -2rem -2rem;
-    padding: 1rem;
-}
-
-
 
 
 /* Patron */
@@ -200,12 +195,12 @@ a:active {
     border-radius: 0.4rem;
     padding: 1rem;
     text-align: center;
-}
 
-.patron__name {
-    color: $secondary;
-}
+    &__name {
+        color: $secondary;
+    }
 
-.patron__image {
-    border: 0.5rem solid $primary;
+    &__image {
+        border: 0.5rem solid $primary;
+    }
 }
