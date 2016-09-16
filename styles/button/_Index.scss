@@ -1,0 +1,54 @@
+@mixin button($bg-color, $radius, $color, $display, $padding, $transition-time, $text-decoration) {
+    background-color: $bg-color;
+    border-radius: $radius;
+    color: $color;
+    display: $display;
+    padding: $padding;
+    transition: background-color $transition-time, box-shadow $transition-time;
+    text-decoration: $text-decoration;
+    
+    &:hover {
+        background-color: darken($action, 10%);
+        color: $dark;
+    }
+
+    &:focus {
+        background-color: lighten($action, 20%);
+        box-shadow: 0 0 0 2px $action;
+        color: $dark;
+        outline: none;
+    }
+
+    &:active {
+        background-color: darken($action, 15%);
+        box-shadow: none;
+        color: $dark;
+    }
+}
+
+
+.button {
+    @include button($action, 0.4rem, $dark, inline-block, 1rem 2rem, 0.3s, none);
+
+    &--neutral {
+        @include button($light, 0.4rem, $dark, inline-block, 1rem 2rem, 0.3s, none);
+
+        &:hover {
+            background-color: darken($light, 10%);
+            color: $dark;
+        }
+
+        &:focus {
+            background-color: lighten($light, 20%);
+            box-shadow: 0 0 0 2px $action;
+            color: $dark;
+            outline: none;
+        }
+
+        &:active {
+            background-color: darken($light, 15%);
+            box-shadow: none;
+            color: $dark;
+        }
+    }
+}
