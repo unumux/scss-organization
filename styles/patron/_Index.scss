@@ -1,0 +1,15 @@
+.patron {
+    background-color: $light;
+    border: 0.8rem solid $dark;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    text-align: center;
+
+    &__name {
+        color: $secondary;
+    }
+
+    &__image {
+        border: 0.5rem solid $primary;
+    }
+}
