@@ -1,4 +1,4 @@
-&__name {
+@mixin base() {
     border-left: 0.5rem solid $action-text;
     display: inline-block;
     padding: 1rem;

@@ -1,0 +1,24 @@
+@import 'base';
+
+.componentA {
+    @include base(#aaa);
+
+    &--modifierA {
+        @include base(#ff0);
+        color: #f00;
+    }
+
+    &--modifierB {
+        @include base(#f0f);
+        color: #0f0;
+    }
+
+    &--modifierC {
+        @include base(#0ff);
+        color: #00f;
+    }
+
+    @import "../elementA/index";
+    @import "../elementB/index";
+    @import "../elementC/index";
+}

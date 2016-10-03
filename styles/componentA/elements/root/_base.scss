@@ -1,0 +1,8 @@
+@import '../../mixins/mixinA';
+
+@mixin base($hover-color) {
+    background-color: #000;
+    color: #fff;
+
+    @include hover-color($hover-color);
+}

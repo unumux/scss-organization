@@ -1,0 +1,9 @@
+@import 'base';
+
+.action-box {
+    @include base;
+
+    @import '../heading/index';
+    @import '../description/index';
+    @import '../actions/index';
+}

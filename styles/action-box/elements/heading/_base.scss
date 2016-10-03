@@ -1,4 +1,4 @@
-&__heading {
+@mixin base() {
     background-color: $secondary;
     font-size: 4rem;
     font-weight: normal;

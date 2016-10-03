@@ -1,0 +1,17 @@
+@import 'base';
+
+&__elementB {
+    @include base;
+
+    &--modifierA {
+        @include base;
+
+        color: pink;
+    }
+
+    &--modifierB {
+        @include base;
+
+        color: purple;
+    }
+}
