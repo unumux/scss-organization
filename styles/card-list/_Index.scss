@@ -1,7 +1,7 @@
+@import "./base";
+
 .card-list {
-    background-color: lighten($primary, 5%);
-    margin-bottom: 2rem;
-    padding: 2rem;
+    @include base;
 
     @import "name";
     @import "description";

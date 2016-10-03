@@ -1,5 +1,7 @@
+@import "./base";
+
 .action-box {
-    text-align: center;
+    @include base;
 
     @import "heading";
     @import "description";
