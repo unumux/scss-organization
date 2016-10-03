@@ -1,0 +1,8 @@
+@import 'base';
+
+.patron {
+    @include base;
+
+    @import 'elements/name/index';
+    @import 'elements/image/index';
+}
