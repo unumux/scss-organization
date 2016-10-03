@@ -1,8 +1,8 @@
-@import 'elements/index';
+@import 'base';
 @import 'button/elements/root/index';
 @import 'card-list/elements/root/index';
 @import 'action-box/elements/root/index';
 @import 'patron/elements/root/index';
 
 /* example component */
-@import 'componentA/elements/root/index';
+@import 'componentA/styles/index';

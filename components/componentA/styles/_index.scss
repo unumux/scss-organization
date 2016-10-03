@@ -18,7 +18,7 @@
         color: #00f;
     }
 
-    @import "../elementA/index";
-    @import "../elementB/index";
-    @import "../elementC/index";
+    @import "elements/elementA/index";
+    @import "elements/elementB/index";
+    @import "elements/elementC/index";
 }
