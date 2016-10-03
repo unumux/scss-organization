@@ -1,11 +1,13 @@
-@mixin button($bg-color, $radius, $color, $display, $padding, $transition-time, $text-decoration) {
-    background-color: $bg-color;
-    border-radius: $radius;
-    color: $color;
-    display: $display;
-    padding: $padding;
-    transition: background-color $transition-time, box-shadow $transition-time;
-    text-decoration: $text-decoration;
+/* Buttons */
+
+.button {
+    background-color: $action;
+    border-radius: 0.4rem;
+    color: $dark;
+    display: inline-block;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
     
     &:hover {
         background-color: darken($action, 10%);
@@ -24,14 +26,15 @@
         box-shadow: none;
         color: $dark;
     }
-}
-
-
-.button {
-    @include button($action, 0.4rem, $dark, inline-block, 1rem 2rem, 0.3s, none);
 
     &--neutral {
-        @include button($light, 0.4rem, $dark, inline-block, 1rem 2rem, 0.3s, none);
+        background-color: $light;
+        border-radius: 0.4rem;
+        color: $dark;
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: background-color 0.3s, box-shadow 0.3s;
 
         &:hover {
             background-color: darken($light, 10%);
