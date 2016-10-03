@@ -3,40 +3,8 @@
     margin-bottom: 2rem;
     padding: 2rem;
 
-    &__name {
-        border-left: 0.5rem solid $action-text;
-        display: inline-block;
-        padding: 1rem;
-    }
-
-    &__description {
-        font-style: italic;
-    }
-
-    &__cards {
-        list-style: none;
-        padding: 0;
-
-        @media screen and (min-width: 768px) {
-            display: flex;
-        }
-    }
-
-    &__card {
-        background-color: $primary;
-        padding: 2rem;
-
-        @media screen and (min-width: 768px) {
-            flex: 1 1 auto;
-        }
-
-        & + & {
-            margin: 2rem 0 0 0;
-
-            @media screen and (min-width: 768px) {
-                margin: 0 0 0 2rem;
-            }
-        }
-    }
-
+    @import "name";
+    @import "description";
+    @import "cards";
+    @import "card";
 }

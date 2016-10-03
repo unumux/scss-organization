@@ -5,11 +5,6 @@
     padding: 1rem;
     text-align: center;
 
-    &__name {
-        color: $secondary;
-    }
-
-    &__image {
-        border: 0.5rem solid $primary;
-    }
+    @import "name";
+    @import "image";
 }
