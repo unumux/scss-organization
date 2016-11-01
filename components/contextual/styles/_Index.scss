@@ -1,0 +1,14 @@
+@import 'base';
+
+.contextual {
+    @include base;
+
+
+    h1 {
+        color: deeppink;
+    }
+
+    a {
+        color: green;
+    }
+}

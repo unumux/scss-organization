@@ -1,0 +1,8 @@
+@import 'base';
+
+.excerpt {
+    @include base;
+
+    @import 'elements/heading/index';
+    @import 'elements/content/index';
+}
