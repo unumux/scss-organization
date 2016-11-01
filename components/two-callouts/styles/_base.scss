@@ -1,0 +1,5 @@
+@mixin base() {
+    background-color: $dark;
+    display: flex;
+    margin: 2em auto;
+}
