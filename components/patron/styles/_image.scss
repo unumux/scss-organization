@@ -1,3 +1,7 @@
 @mixin base() {
     border: 0.5rem solid $primary;
 }
+
+&__image {
+    @include base;
+}

@@ -8,3 +8,7 @@
     padding: 2rem;
     text-transform: uppercase;
 }
+
+&__heading {
+    @include base;
+}

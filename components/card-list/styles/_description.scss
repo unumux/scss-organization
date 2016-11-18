@@ -1,3 +1,7 @@
 @mixin base() {
     font-style: italic;
 }
+
+&__description {
+    @include base;
+}

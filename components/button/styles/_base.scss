@@ -1,9 +1,0 @@
-@mixin base() {
-    background-color: $action;
-    border-radius: 0.4rem;
-    color: $dark;
-    display: inline-block;
-    padding: 1rem 2rem;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    text-decoration: none;
-}

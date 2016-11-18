@@ -1,3 +1,7 @@
 @mixin base() {
     text-transform: uppercase;
 }
+
+&__description {
+    @include base;
+}

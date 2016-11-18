@@ -6,3 +6,7 @@
         display: flex;
     }
 }
+
+&__cards {
+    @include base;
+}

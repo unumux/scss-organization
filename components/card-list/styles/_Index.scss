@@ -1,10 +1,14 @@
-@import 'base';
+@mixin base() {
+    background-color: lighten($primary, 5%);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
 
 .card-list {
     @include base;
 
-    @import 'elements/name/index';
-    @import 'elements/description/index';
-    @import 'elements/cards/index';
-    @import 'elements/card/index';
+    @import 'name';
+    @import 'description';
+    @import 'cards';
+    @import 'card';
 }

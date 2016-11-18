@@ -1,10 +1,57 @@
-@import 'base';
+@import 'variables/index';
+
+/* revisit this inclusion at a later date */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+:first-child {
+    margin-top: 0;
+}
+
+:last-child {
+    margin-bottom: 0;
+}
+
+body {
+    background: $primary;
+    color: $light;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 2rem;
+}
+
+a {
+    color: $action-text;
+
+    &:hover {
+        color: darken($action-text, 20%);
+    }
+
+    &:focus {
+        color: darken($action-text, 20%);
+        background-color: rgba(255, 255, 255, 0.2);
+        outline: none;
+    }
+
+    &:active {
+        color: darken($action-text, 30%);
+        background-color: inherit;
+    }
+}
+
 @import 'button/styles/index';
 @import 'card-list/styles/index';
 @import 'action-box/styles/index';
 @import 'patron/styles/index';
 @import 'contextual/styles/index';
 @import 'excerpt/styles/index';
-
-/* example component */
-@import 'componentA/styles/index';

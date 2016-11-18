@@ -1,3 +1,7 @@
 @mixin base() {
     color: $secondary;
 }
+
+&__name {
+    @include base;
+}
