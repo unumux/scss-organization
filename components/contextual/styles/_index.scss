@@ -1,0 +1,12 @@
+@import "contexts/awesome";
+
+@mixin base() {
+    background-color: $secondary;
+    color: $primary;
+    padding: 2em;
+}
+
+.contextual {
+    @include base;
+    @include awesome;
+}

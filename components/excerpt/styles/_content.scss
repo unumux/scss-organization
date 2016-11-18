@@ -1,0 +1,12 @@
+@import 'contexts/better';
+
+@mixin base() {
+    background-color: $light;
+    color: $dark;
+    padding: 2em;
+}
+
+&__content {
+    @include base;
+    @include better;
+}

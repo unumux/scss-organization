@@ -1,0 +1,10 @@
+@mixin better() {
+
+    a {
+        color: $accent;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin awesome() {
+    a {
+        color: $dark;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    h1, h2 {
+        color: $action-text;
+    }
+}

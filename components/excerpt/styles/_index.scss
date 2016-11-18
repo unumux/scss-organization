@@ -1,0 +1,10 @@
+@mixin base() {
+    padding: 2em;
+}
+
+.excerpt {
+    @include base;
+
+    @import 'heading';
+    @import 'content';
+}
