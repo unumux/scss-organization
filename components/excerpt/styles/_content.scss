@@ -1,5 +1,3 @@
-@import 'contexts/better';
-
 @mixin base() {
     background-color: $light;
     color: $dark;
@@ -8,5 +6,8 @@
 
 &__content {
     @include base;
-    @include better;
+
+    .html {
+        @import 'contexts/reverse';
+    }
 }
